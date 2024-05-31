@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(137, 185, 192);
+    text-align: center;
+}
+#heading{
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    
+}
+.container{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    font-size: 9vmin;
+    /* color: chocolate; */
+    cursor: pointer;
+    background-color: aqua;
+}
+.btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    border-radius: 25px;
+    color: #fff;
+    background: darkred;
+    border: none;
+    cursor: pointer;
+}
+#msg{
+    font-size: 6vmin;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+.msg-container{
+    height: 20vmin;
+}
+.hide{
+    display: none;
+}
+
+
+@media (max-width: 400px){
+    .container{
+        height: 50vh;
+    }
+    .game{
+        height: 90vmin;
+        width: 90vmin;
+    }
+    .box{
+        height: 26vmin;
+        width: 26vmin;
+        font-size: 16vmin;
+    }
+    
+}
